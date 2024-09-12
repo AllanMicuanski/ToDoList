@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f1e4;
+}
+
+.to-do-list {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  max-width: 600px; 
+  width: 100%; 
+}
+
+h1 {
+  font-size: 3em;
+  color: #4e4e4e;
+}
+
+button {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 8px 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button {
+  background-color: #8e735b;
+}
+.add-button:hover {
+  background-color: #6f4f28;
+}
+
+.delete-button {
+  background-color: #c44d4d;
+}
+.delete-button:hover {
+  background-color: #a33a3a;
+}
+
+.move-up-button {
+  background-color: #7a8b8a;
+}
+.move-up-button:hover {
+  background-color: #5a6a67;
+}
+
+.move-down-button {
+  background-color: #c6a371;
+}
+.move-down-button:hover {
+  background-color: #a6864e;
+}
+
+input[type='text'] {
+  font-size: 1.2em;
+  padding: 8px;
+  border: 2px solid #d1bfa7;
+  border-radius: 5px;
+  color: #000;
+}
+
+ol {
+  list-style-type: none;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+li {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #e5e5e5;
+  margin-bottom: 20px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  flex: 1;
+}
+
+.delete-button, .move-up-button, .move-down-button {
+  padding: 6px 12px;
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .to-do-list {
+    margin: 0 auto;
+    max-width: 90%; 
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 6px 12px;
+  }
+
+  input[type='text'] {
+    font-size: 1em;
+    padding: 6px;
+  }
+
+  li {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  .delete-button, .move-up-button, .move-down-button {
+    padding: 4px 8px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .to-do-list {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 4px 8px;
+  }
+
+  input[type='text'] {
+    font-size: 0.9em;
+    padding: 4px;
+  }
+
+  li {
+    font-size: 0.8em;
+    padding: 6px;
+  }
+
+  .delete-button, .move-up-button, .move-down-button {
+    padding: 2px 6px;
+    font-size: 0.9em;
+  }
+}
