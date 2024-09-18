@@ -1,0 +1,65 @@
+.progress-container {
+  margin: 20px 0;
+  height: 25px;
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #8e735b;
+  transition: width 0.3s ease;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+/* Estilo do checkbox */
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.custom-checkbox input {
+  opacity: 1;
+  width: 0;
+  height: 0;
+}
+
+.custom-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #f4f1e4;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #8e735b;
+}
+
+.custom-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+  left: 8px;
+  top: 2px;
+  width:3px;
+  height: 11px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
