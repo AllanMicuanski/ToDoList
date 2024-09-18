@@ -4,15 +4,23 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f4f1e4;
+  background: #f4f1e4;
+  background-repeat: repeat;
+  background-position: top right;
+  background-image: linear-gradient(
+      rgba(244, 241, 228, 0.7),
+      rgba(244, 241, 228, 0.8)
+       
+    ),
+    url('../livros.jpg');
 }
 
 .to-do-list {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin: 0;
-  max-width: 600px; 
-  width: 100%; 
+  max-width: 600px;
+  width: 100%;
 }
 
 h1 {
@@ -90,7 +98,9 @@ li {
   flex: 1;
 }
 
-.delete-button, .move-up-button, .move-down-button {
+.delete-button,
+.move-up-button,
+.move-down-button {
   padding: 6px 12px;
   font-size: 1.2em;
   margin-left: 10px;
@@ -99,7 +109,7 @@ li {
 @media (max-width: 768px) {
   .to-do-list {
     margin: 0 auto;
-    max-width: 90%; 
+    max-width: 90%;
   }
 
   h1 {
@@ -121,7 +131,9 @@ li {
     padding: 8px;
   }
 
-  .delete-button, .move-up-button, .move-down-button {
+  .delete-button,
+  .move-up-button,
+  .move-down-button {
     padding: 4px 8px;
     font-size: 1em;
   }
@@ -152,7 +164,9 @@ li {
     padding: 6px;
   }
 
-  .delete-button, .move-up-button, .move-down-button {
+  .delete-button,
+  .move-up-button,
+  .move-down-button {
     padding: 2px 6px;
     font-size: 0.9em;
   }
