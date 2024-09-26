@@ -2,7 +2,13 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
-const TaskInput = ({ newTask, onChange, onAdd }) => {
+interface TaskInputProps {
+  newTask: string;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onAdd: () => void;
+}
+
+const TaskInput: React.FC<TaskInputProps> = ({ newTask, onChange, onAdd }) => {
   return (
     <div className="input-container">
       <input
